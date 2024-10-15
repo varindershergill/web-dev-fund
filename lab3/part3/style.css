@@ -1,0 +1,163 @@
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+  font-family: 'Merriweather', serif; /* Serif font for body text */
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('fonts/Merriweather-Regular.woff2') format('woff2'),
+       url('fonts/Merriweather-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato-Regular.woff2') format('woff2'),
+       url('fonts/Lato-Regular.ttf') format('truetype');
+  
+}
+
+
+h1, h2, nav ul li a {
+  font-family: 'Lato', sans-serif; 
+}
+
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+
+header, footer {
+  border-top: 5px solid #a66; 
+  border-bottom: 5px solid #a66; 
+}
+
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+p {
+  text-indent: 20px;
+  font-size: 1.5rem;
+}
+
+/* Links */
+a {
+  color: #a66; 
+  font-size: 1.5rem; 
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #a66; 
+}
+
+a:hover, a:focus {
+  text-decoration: none; 
+}
+
+a:active {
+  color: #f00; 
+}
+
+a.external:after {
+  content: url('path-to-external-link-icon'); 
+  padding-left: 5px;
+}
+
+a:focus {
+  outline: none; 
+}
+
+
+ul, ol {
+  line-height: 1;
+  margin: 20px 0;
+}
+
+li {
+  font-size: 1.5rem; 
+  margin-bottom: 10px;
+}
+
+
+aside h2 {
+  color: #000; 
+}
+
+aside ul li a {
+  color: #a66; 
+  font-size: 1.5rem; 
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  font-size: 1.5rem;
+  color: #a66; 
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  background-color: #fff; 
+  border: 2px solid #a66; 
+  border-radius: 5px; 
+  text-align: center;
+  line-height: 3;
+}
+
+nav ul li a:hover {
+  background-color: #f0f0f0; 
+}
+
+
+footer a {
+  color: #a66; 
+  text-decoration: underline;
+  font-size: 1.5rem; 
+}

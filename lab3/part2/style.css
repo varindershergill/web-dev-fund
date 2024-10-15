@@ -1,0 +1,48 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 800px; 
+  margin: 0;
+  background-color: white; 
+}
+
+.cool-box {
+  width: 200px; 
+  height: 200px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-size: 18px; 
+  color: white; 
+  background-color: red; 
+  border: 1px solid red; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 
+              inset 0 2px 4px rgba(255, 255, 255, 0.2), 
+              inset 0 -2px 4px rgba(0, 0, 0, 0.3); 
+  position: relative;
+  overflow: hidden; 
+}
+
+/* Gradient Background */
+.cool-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.2) 100%);
+  z-index: 0; 
+}
+
+.cool-box {
+  z-index: 1; 
+  text-shadow: 1px 1px 2px black; 
+}
